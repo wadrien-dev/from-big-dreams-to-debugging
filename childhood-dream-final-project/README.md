@@ -1,73 +1,104 @@
-# React + TypeScript + Vite
+# From Big Dreams to Debugging
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive React and TypeScript website about creativity, problem-solving, leadership, and my journey toward becoming a software developer.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**From Big Dreams to Debugging** was developed as a React and TypeScript final project. The website connects my childhood interest in creative and meaningful work with my current goal of building useful software solutions.
 
-## React Compiler
+The project demonstrates frontend-development fundamentals through a multi-page user experience, reusable components, custom styling, responsive layouts, and a dynamic skills table that allows users to add and remove records.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Key Features
 
-## Expanding the ESLint configuration
+- Multi-page website with reusable navigation
+- Consistent green visual theme and branded illustrations
+- Responsive page layouts
+- Custom content sections and card components
+- Interactive skills table
+- Add and remove functionality using React state
+- Form inputs for skill name, category, and personal significance
+- Career-development roadmap organized into four steps
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Pages
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Home
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Introduces the project theme, personal motivation, and core strengths:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Creative Spark
+- Problem Solver Energy
+- Final Project Build
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### My Dream
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Explains how a childhood interest in creative and meaningful work developed into a goal of becoming a software developer.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Skills Lab
+
+Includes an interactive skills table powered by React state. Users can add new records and remove existing entries.
+
+Initial skill categories include:
+
+- Debugging
+- Creativity
+- Leadership
+- Communication
+
+### Future Plan
+
+Presents a four-step roadmap for continued growth:
+
+1. Continue practicing React and TypeScript through small projects.
+2. Build a portfolio that demonstrates creativity, leadership, and technical skills.
+3. Improve debugging skills by learning how to identify and resolve errors.
+4. Continue growing toward a software-development career with confidence.
+
+## Technologies Used
+
+- React
+- TypeScript
+- HTML
+- CSS
+- React State Management
+- Reusable Components
+- Responsive Web Design
+
+## Screenshots
+
+### Home Page
+![Home Page](docs/screenshots/home-page.png)
+
+### My Childhood Dream
+![My Dream Page](docs/screenshots/my-dream-page.png)
+
+### Interactive Skills Lab
+![Skills Lab Page](docs/screenshots/skills-lab-page.png)
+
+### Future Plan
+![Future Plan Page](docs/screenshots/future-plan-page.png)
+
+## What I Learned
+
+This project strengthened my ability to:
+
+- Build reusable React components
+- Organize a multi-page frontend project
+- Use TypeScript in a React application
+- Manage dynamic data using React state
+- Create forms that update the interface
+- Design consistent and responsive layouts
+- Translate a creative idea into a functional website
+
+## Future Improvements
+
+- Add form validation and user-friendly error messages
+- Save skills-table entries with local storage or a database
+- Improve accessibility with keyboard navigation and ARIA labels
+- Add automated tests
+- Deploy the project online
+- Optimize the design for additional screen sizes
+
+## Author
+
+**Woodna Adrien**  
+Computer Science Graduate | Junior Software Developer | Application Support | QA Testing
